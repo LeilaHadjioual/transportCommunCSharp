@@ -1,0 +1,11 @@
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\TransportsCommunCSharp\bin\Debug\TransportsCommunCSharp.exe.config
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\TransportsCommunCSharp\bin\Debug\TransportsCommunCSharp.exe
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\TransportsCommunCSharp\bin\Debug\TransportsCommunCSharp.pdb
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\TransportsCommunCSharp\obj\Debug\TransportsCommunCSharp.csprojAssemblyReference.cache
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\TransportsCommunCSharp\obj\Debug\TransportsCommunCSharp.csproj.CoreCompileInputs.cache
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\TransportsCommunCSharp\obj\Debug\TransportsCommunCSharp.exe
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\TransportsCommunCSharp\obj\Debug\TransportsCommunCSharp.pdb
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\TransportsCommunCSharp\bin\Debug\Json.NET.Web.dll
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\TransportsCommunCSharp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\TransportsCommunCSharp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\TransportsCommunCSharp\obj\Debug\TransportsCommunCSharp.csproj.CopyComplete
