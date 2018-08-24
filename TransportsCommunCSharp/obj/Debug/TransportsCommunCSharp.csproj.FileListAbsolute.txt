@@ -9,3 +9,5 @@ C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\TransportsCommunCSh
 C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\TransportsCommunCSharp\bin\Debug\Newtonsoft.Json.dll
 C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\TransportsCommunCSharp\bin\Debug\Newtonsoft.Json.xml
 C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\TransportsCommunCSharp\obj\Debug\TransportsCommunCSharp.csproj.CopyComplete
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\TransportsCommunCSharp\bin\Debug\TransportLibrary.dll
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\TransportsCommunCSharp\bin\Debug\TransportLibrary.pdb

@@ -1,0 +1,6 @@
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\TransportLibrary\bin\Debug\TransportLibrary.dll
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\TransportLibrary\bin\Debug\TransportLibrary.pdb
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\TransportLibrary\obj\Debug\MyLibrary.csproj.CoreCompileInputs.cache
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\TransportLibrary\obj\Debug\TransportLibrary.dll
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\TransportLibrary\obj\Debug\TransportLibrary.pdb
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\TransportLibrary\obj\Debug\MyLibrary.csprojAssemblyReference.cache
