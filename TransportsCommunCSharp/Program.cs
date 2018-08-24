@@ -19,6 +19,7 @@ namespace TransportsCommunCSharp
 
             //connexion à l'API
             Connexion connect = new Connexion();
+            Connexion connectUrl2 = new Connexion();
 
             //récupère les coordonnées 7 rue hoche
             String latitude = "45.185476";
@@ -27,26 +28,35 @@ namespace TransportsCommunCSharp
 
             //déclare l'url
             String url = "http://data.metromobilite.fr/api/linesNear/json?x=" + longitude + "&y=" + latitude + "&dist=" + distance + "&details=true";
+            String url2 = "http://data.metromobilite.fr/api/routers/default/index/routes";
 
-            //stocke la réponse de la méthode coccect.Api
+            //stocke la réponse de la méthode connect.Api
             String ResponseFromServer = connect.ConnectApi(url);
+            String Response2 = connectUrl2.ConnectApi(url2);
 
             //utilise l'objet BusStationObject et convertit le flux JSON en objet C# ---- "ajout package nuget newtonsoft.json et création d'un objet BusstationObject via json2charp.com"
             List<BusStationObject> busStation = JsonConvert.DeserializeObject<List<BusStationObject>>(ResponseFromServer);
+            List<DetailsTransports> detailsBus = JsonConvert.DeserializeObject<List<DetailsTransports>>(Response2);
 
-            Unduplicate lib = new Unduplicate();
-            Dictionary<string, List<string>> result = lib.RemoveDuplicate(busStation);
+            //utilise l'object undiplicate pour supprimer les doublons d'arrêts bus
+            Unduplicate doublon = new Unduplicate();
+            Dictionary<string, List<string>> result = doublon.RemoveDuplicate(busStation);
 
             //affichage du nouveau dictionnaire result
             foreach (KeyValuePair<string, List<string>> kvp in result)
             {
-                Console.WriteLine("Arret = " + kvp.Key);
+                Console.WriteLine("\nArret = " + kvp.Key);
+
                 foreach (string line in kvp.Value)
                 {
-                    int delimiter = line.IndexOf(":");
-                    Console.WriteLine("    Ligne = " + line.Substring(delimiter + 1));
+                    foreach (DetailsTransports details in detailsBus)
+                    {
+                        if (details.id.Contains(line))
+                        {
+                            Console.WriteLine("    " + details.mode + " " + details.shortName + "   couleur = " + details.color + "   nom ligne = " + details.longName);
+                        }
+                    }
                 }
-
             }
 
 

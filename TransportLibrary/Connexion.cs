@@ -43,6 +43,6 @@ namespace TransportLibrary
             response.Close();
 
             return responseFromServer;
-        } 
-    } 
+        }
+    }
 }
