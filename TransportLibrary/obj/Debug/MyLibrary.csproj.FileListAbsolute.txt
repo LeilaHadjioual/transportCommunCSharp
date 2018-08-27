@@ -4,3 +4,6 @@ C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\TransportLibrary\ob
 C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\TransportLibrary\obj\Debug\TransportLibrary.dll
 C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\TransportLibrary\obj\Debug\TransportLibrary.pdb
 C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\TransportLibrary\obj\Debug\MyLibrary.csprojAssemblyReference.cache
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\TransportLibrary\bin\Debug\Newtonsoft.Json.dll
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\TransportLibrary\bin\Debug\Newtonsoft.Json.xml
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\TransportLibrary\obj\Debug\MyLibrary.csproj.CopyComplete

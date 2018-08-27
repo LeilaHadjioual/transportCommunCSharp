@@ -7,9 +7,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace TransportLibrary
+namespace MyLibrary
 {
-    public class Connexion
+    public class Connexion : IConnexion
     {
         public String ConnectApi(String url)
         {
@@ -23,7 +23,7 @@ namespace TransportLibrary
             HttpWebResponse response = (HttpWebResponse)request.GetResponse();
 
             // -------------- Display the status.---------------------------
-            Console.WriteLine(response.StatusDescription);
+            //Console.WriteLine(response.StatusDescription);
 
             // ---------- Get the stream containing content returned by the server.----------------
             Stream dataStream = response.GetResponseStream();
