@@ -9,9 +9,11 @@ namespace UnitTestTransportsCommuns
 {
     public class FakeConnexion : IConnexion
     {
-        public string ConnectApi(string url)
+        public String jsonResult { get; set; }
+
+        public String ConnectApi(string url)
         {
-            return Json1.jsonStation;
+            return jsonResult;
         }
     }
 }

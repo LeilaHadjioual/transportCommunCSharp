@@ -25,7 +25,9 @@ namespace MyLibrary.Tests
             String longitude = "5.727772";
             int distance = 400;
 
-            Unduplicate testConnect = new Unduplicate(new FakeConnexion());
+            FakeConnexion testFakeConnect = new FakeConnexion();
+            testFakeConnect.jsonResult = Json1.jsonStation;
+            Unduplicate testConnect = new Unduplicate(testFakeConnect);
             Dictionary<string, List<string>> result = testConnect.RemoveDuplicate(latitude, longitude, distance);
             Assert.AreEqual(1, result.Count);
             Assert.IsTrue(result.ContainsKey("GRENOBLE, CASERNE DE BONNE"));

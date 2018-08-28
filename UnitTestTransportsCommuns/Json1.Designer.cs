@@ -61,6 +61,15 @@ namespace UnitTestTransportsCommuns {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à [{&quot;id&quot;:&quot;SEM:13&quot;,&quot;shortName&quot;:&quot;13&quot;,&quot;longName&quot;:&quot;Meylan Lycée du Grésivaudan / Poisat Prémol&quot;,&quot;color&quot;:&quot;00BC9E&quot;,&quot;textColor&quot;:&quot;FFFFFF&quot;,&quot;mode&quot;:&quot;BUS&quot;,&quot;type&quot;:&quot;PROXIMO&quot;}].
+        /// </summary>
+        internal static string jsonDetailsLine {
+            get {
+                return ResourceManager.GetString("jsonDetailsLine", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à [{&quot;id&quot;:&quot;SEM:1986&quot;,&quot;name&quot;:&quot;GRENOBLE, CASERNE DE BONNE&quot;,&quot;lon&quot;:5.72533,&quot;lat&quot;:45.18506,&quot;lines&quot;:[&quot;SEM:13&quot;,&quot;SEM:16&quot;,&quot;SEM:C4&quot;]},{&quot;id&quot;:&quot;SEM:1987&quot;,&quot;name&quot;:&quot;GRENOBLE, CASERNE DE BONNE&quot;,&quot;lon&quot;:5.72542,&quot;lat&quot;:45.18509,&quot;lines&quot;:[&quot;SEM:16&quot;]}].
         /// </summary>
         internal static string jsonStation {
