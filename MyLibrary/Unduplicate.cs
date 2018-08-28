@@ -11,13 +11,13 @@ namespace MyLibrary
     public class Unduplicate
     {
         private IConnexion Connect;
-     
+
         //constructeur
         public Unduplicate(IConnexion con)
         {
             Connect = con;
         }
-       
+
         //méthode qui permet de se connecter 1ère api
         private List<BusStationObject> convertJsonList(String latitude, String longitude, Int32 distance)
         {
@@ -31,7 +31,7 @@ namespace MyLibrary
         public Dictionary<string, List<string>> RemoveDuplicate(String latitude, String longitude, Int32 distance)
         {
             List<BusStationObject> listStation = convertJsonList(latitude, longitude, distance);
-            
+
             Dictionary<string, List<string>> myDictionary = new Dictionary<string, List<string>>();
 
             foreach (BusStationObject station in listStation)
@@ -40,16 +40,21 @@ namespace MyLibrary
                 {
                     myDictionary.Add(station.name, station.lines);
                 }
-                else
-                {
-                    foreach (string line in station.lines)
-                    {
-                        if (!myDictionary[station.name].Contains(line))
-                        {
-                            myDictionary[station.name].Add(line);
-                        }
-                    }
-                }
+
+                //1ère façon pour supprimer les doublons
+                //else
+                //{
+                //    foreach (string line in station.lines)
+                //    {
+                //        if (!myDictionary[station.name].Contains(line))
+                //        {
+                //            myDictionary[station.name].Add(line);
+                //        }
+                //    }
+                //}
+
+                //2ème façon avec les méthodes existantes
+                myDictionary[station.name] = myDictionary[station.name].Distinct().ToList();
             }
             return myDictionary;
         }

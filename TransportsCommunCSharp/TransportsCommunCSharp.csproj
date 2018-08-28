@@ -60,7 +60,7 @@
     <Content Include="Scripts\json-serialize.min.js" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TransportLibrary\MyLibrary.csproj">
+    <ProjectReference Include="..\MyLibrary\MyLibrary.csproj">
       <Project>{2c653780-e51c-4855-a868-865c844ff4a7}</Project>
       <Name>MyLibrary</Name>
     </ProjectReference>
