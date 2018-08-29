@@ -1,0 +1,15 @@
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\WpfTransports\bin\Debug\WpfTransports.exe.config
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\WpfTransports\bin\Debug\WpfTransports.exe
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\WpfTransports\bin\Debug\WpfTransports.pdb
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\WpfTransports\obj\Debug\WpfTransports.csprojAssemblyReference.cache
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\WpfTransports\obj\Debug\MainWindow.g.cs
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\WpfTransports\obj\Debug\App.g.cs
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\WpfTransports\obj\Debug\WpfTransports_MarkupCompile.cache
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\WpfTransports\obj\Debug\WpfTransports_MarkupCompile.lref
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\WpfTransports\obj\Debug\MainWindow.baml
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\WpfTransports\obj\Debug\WpfTransports.g.resources
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\WpfTransports\obj\Debug\WpfTransports.Properties.Resources.resources
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\WpfTransports\obj\Debug\WpfTransports.csproj.GenerateResource.cache
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\WpfTransports\obj\Debug\WpfTransports.csproj.CoreCompileInputs.cache
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\WpfTransports\obj\Debug\WpfTransports.exe
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\WpfTransports\obj\Debug\WpfTransports.pdb
