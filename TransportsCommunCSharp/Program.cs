@@ -23,8 +23,8 @@ namespace TransportsCommunCSharp
             int distance = 400;
 
             //connexion à la 1ère api et suppression des doublons d'arrêts bus via méthode removeduplicate
-            Unduplicate fistConnect = new Unduplicate(new Connexion());
-            Dictionary<string, List<string>> result = fistConnect.RemoveDuplicate(latitude, longitude, distance);
+            Unduplicate firstConnect = new Unduplicate(new Connexion());
+            Dictionary<string, List<string>> result = firstConnect.RemoveDuplicate(latitude, longitude, distance);
 
             //utilise la 2ème api pour avoir le détail des lignes et convertit en Json
             DataDetailsTransport dataDetailsTransport = new DataDetailsTransport(new Connexion());

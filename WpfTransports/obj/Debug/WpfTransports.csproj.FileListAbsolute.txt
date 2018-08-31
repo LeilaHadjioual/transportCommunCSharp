@@ -13,3 +13,11 @@ C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\WpfTransports\obj\D
 C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\WpfTransports\obj\Debug\WpfTransports.csproj.CoreCompileInputs.cache
 C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\WpfTransports\obj\Debug\WpfTransports.exe
 C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\WpfTransports\obj\Debug\WpfTransports.pdb
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\WpfTransports\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\WpfTransports\obj\Debug\Views\TransportView.g.cs
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\WpfTransports\obj\Debug\Views\TransportView.baml
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\WpfTransports\bin\Debug\TransportLibrary.dll
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\WpfTransports\bin\Debug\Newtonsoft.Json.dll
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\WpfTransports\bin\Debug\TransportLibrary.pdb
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\WpfTransports\bin\Debug\Newtonsoft.Json.xml
+C:\Users\leila.hadjioual\source\repos\TransportsCommunCSharp\WpfTransports\obj\Debug\WpfTransports.csproj.CopyComplete

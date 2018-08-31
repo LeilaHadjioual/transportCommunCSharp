@@ -7,6 +7,35 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-            
+        <StackPanel HorizontalAlignment="Left">
+            <TextBlock Text = "{Binding Path = MonTitre}"/>
+            <StackPanel>
+                <TextBlock>longitude</TextBlock>
+                <TextBox Width = "100" Margin = "0 5 3 5"/>
+                <TextBlock>latitude</TextBlock>
+                <TextBox Width = "100" Margin = "0 5 3 5"></TextBox>
+                <TextBlock>distance</TextBlock>
+                <TextBox Width = "100" Margin = "0 5 3 5"></TextBox>
+            </StackPanel>
+            <ItemsControl ItemsSource = "{Binding Path = Transports}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation = "Horizontal">
+                            <TextBlock Text = "{Binding Path = Station}"/>
+                            <ListBox ItemsSource = "{Binding Path = Lines}">
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation = "Horizontal">
+                                            <TextBlock Text = "{Binding}"/>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
+                        </StackPanel>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+
+        </StackPanel>
     </Grid>
 </UserControl>

@@ -23,6 +23,8 @@ namespace WpfTransports
         public MainWindow()
         {
             InitializeComponent();
+            ModelView.TransportModelView transportModelViewObject = new ModelView.TransportModelView();
+            MyView.DataContext = transportModelViewObject;
         }
     }
 }
