@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,12 +10,73 @@ using WpfTransports.Model;
 
 namespace WpfTransports.ModelView
 {
-    public class TransportModelView
-    {
-        //constructeur
-        public TransportModelView()
+    public class TransportModelView : INotifyPropertyChanged
+
+    {   //attributs
+        private string latitude;
+        private string longitude;
+        private int distance;
+        private ObservableCollection<Transport> transports;
+        //attribut pour pouvoir utiliser l'interface INotifyPropertyChanged
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        //property liées aux attributs
+        public int Distance
         {
-            LoadTransport();
+            get { return distance; }
+            set
+            {
+                if (distance != value)
+                {
+                    distance = value;
+                    LoadTransport();
+                    RaisePropertyChanged("Distance");
+                }
+            }
+        }
+
+        public string Longitude
+        {
+            get { return longitude; }
+            set
+            {
+                if (longitude != value)
+                {
+                    longitude = value;
+                    LoadTransport();
+                    RaisePropertyChanged("Longitude");
+                }
+            }
+        }
+
+        public string Latitude
+        {
+            get { return latitude; }
+            set
+            {
+                if (latitude != value)
+                {
+                    latitude = value;
+                    LoadTransport();
+                    RaisePropertyChanged("Latitude");
+                }
+            }
+        }
+
+        public ObservableCollection<Transport> Transports
+        {
+            get
+            {
+                return transports;
+            }
+            set
+            {
+                if (transports != value)
+                {
+                    transports = value;
+                    RaisePropertyChanged("Transports");
+                }
+            }
         }
 
         public String MonTitre
@@ -23,19 +85,19 @@ namespace WpfTransports.ModelView
             set;
         }
 
-        public ObservableCollection<Transport> Transports
+        //constructeur
+        public TransportModelView()
         {
-            get;
-            set;
+            latitude = "45.185476";
+            longitude = "5.727772";
+            distance = 600;
+
+            LoadTransport();
         }
 
-
+        //méthode qui affiche les arrets et ligne de bus
         public void LoadTransport()
         {
-            String latitude = "45.185476";
-            String longitude = "5.727772";
-            int distance = 600;
-
             Unduplicate connect = new Unduplicate(new Connexion());
             Dictionary<string, List<string>> result = connect.RemoveDuplicate(latitude, longitude, distance);
 
@@ -46,6 +108,7 @@ namespace WpfTransports.ModelView
             Transports = bus;
         }
 
+        //méthode qui transforme un dictionnaire en liste de string
         public ObservableCollection<Transport> transformDictionaryInList(Dictionary<string, List<string>> myDico)
         {
             ObservableCollection<Transport> newList = new ObservableCollection<Transport>();
@@ -57,6 +120,14 @@ namespace WpfTransports.ModelView
             return newList;
         }
 
+        //méthode qui permet de notifier si un une modification a eu lieu  
+        private void RaisePropertyChanged(string property)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(property));
+            }
+        }
     }
 }
 

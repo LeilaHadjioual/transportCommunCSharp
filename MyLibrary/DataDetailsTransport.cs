@@ -26,7 +26,5 @@ namespace MyLibrary
             List<DetailsTransports> detailsLine = JsonConvert.DeserializeObject<List<DetailsTransports>>(co);
             return detailsLine[0];
         }
-
-       
     }
 }

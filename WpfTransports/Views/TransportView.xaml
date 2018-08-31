@@ -6,36 +6,53 @@
              xmlns:local="clr-namespace:WpfTransports.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-        <StackPanel HorizontalAlignment="Left">
-            <TextBlock Text = "{Binding Path = MonTitre}"/>
-            <StackPanel>
-                <TextBlock>longitude</TextBlock>
-                <TextBox Width = "100" Margin = "0 5 3 5"/>
-                <TextBlock>latitude</TextBlock>
-                <TextBox Width = "100" Margin = "0 5 3 5"></TextBox>
-                <TextBlock>distance</TextBlock>
-                <TextBox Width = "100" Margin = "0 5 3 5"></TextBox>
-            </StackPanel>
-            <ItemsControl ItemsSource = "{Binding Path = Transports}">
-                <ItemsControl.ItemTemplate>
-                    <DataTemplate>
-                        <StackPanel Orientation = "Horizontal">
-                            <TextBlock Text = "{Binding Path = Station}"/>
-                            <ListBox ItemsSource = "{Binding Path = Lines}">
-                                <ListBox.ItemTemplate>
-                                    <DataTemplate>
-                                        <StackPanel Orientation = "Horizontal">
-                                            <TextBlock Text = "{Binding}"/>
-                                        </StackPanel>
-                                    </DataTemplate>
-                                </ListBox.ItemTemplate>
-                            </ListBox>
-                        </StackPanel>
-                    </DataTemplate>
-                </ItemsControl.ItemTemplate>
-            </ItemsControl>
 
-        </StackPanel>
-    </Grid>
+    <ScrollViewer>
+        <Grid Margin="10,0,10,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition />
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <StackPanel  >
+                <TextBlock HorizontalAlignment="Center" FontSize ="22" FontWeight="ExtraBold" Foreground ="CadetBlue" Text = "{Binding Path = MonTitre}"/>
+                <WrapPanel HorizontalAlignment="Center" Width="805" Margin="0,40,-22,0" >
+                    <Label FontSize ="16" FontWeight="Bold" Content="Longitude" Width="90"/>
+                    <TextBox Text="{Binding Longitude}" Width = "175" Margin = "0 5 3 5"/>
+                    <Label FontSize ="16" FontWeight="Bold" Content="Latitude" Width="90"/>
+                    <TextBox Text="{Binding Latitude}" Width = "160" Margin = "0 5 3 5"/>
+                    <Label FontSize ="16" FontWeight="Bold" Content="Distance" Width="90"/>
+                    <TextBox Text="{Binding Distance}" Width = "156" Margin = "0 5 3 5"/>
+                </WrapPanel>
+                <Button Content="Rechercher" Margin="0,15,0,51" Width="90"/>
+                <Border Background="Blue" Opacity="0.7" CornerRadius="75,0,75,0">
+                    <ItemsControl ItemsSource = "{Binding Path = Transports}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            
+                            <WrapPanel Orientation = "Horizontal">
+                                
+                                    <TextBlock FontSize = "16" FontWeight= "Bold" Text = "{Binding Path = Station}"/>
+                                    <ItemsControl ItemsSource = "{Binding Path = Lines}">
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <WrapPanel Orientation = "Horizontal">
+                                                    <TextBlock FontSize ="14" FontStyle="Italic" Text = "{Binding}"/>
+                                                </WrapPanel>
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+                                    </ItemsControl>
+                                
+                            </WrapPanel>
+                           
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+                </Border>
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
 </UserControl>
